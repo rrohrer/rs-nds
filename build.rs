@@ -33,6 +33,7 @@ fn main() {
         .header(libnds_stdio_header.to_str().unwrap())
         .trust_clang_mangling(false)
         .use_core()
+        .ctypes_prefix("cty")
         .clang_arg("-DARM9")
         .clang_arg("-DNDEBUG")
         .clang_arg("-isystem".to_owned() + libnds_include.to_str().unwrap())

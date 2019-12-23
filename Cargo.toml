@@ -9,5 +9,8 @@ edition = "2018"
 default = []
 use-bindgen = ["bindgen"]
 
+[dependencies]
+cty = "*"
+
 [build-dependencies]
 bindgen = {version = "0.52.0", optional = true}
