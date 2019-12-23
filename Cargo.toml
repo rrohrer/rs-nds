@@ -1,0 +1,13 @@
+[package]
+name = "rs-nds"
+license = "MIT"
+version = "0.5.0"
+authors = ["rrohrer <ryan.rohrer@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+use-bindgen = ["bindgen"]
+
+[build-dependencies]
+bindgen = {version = "0.52.0", optional = true}
