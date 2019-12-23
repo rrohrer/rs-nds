@@ -2,8 +2,17 @@
 Bindings generated for libnds as provided by Devkitpro
 
 # Usage:
-The most simple hello world example of how to use this lib:
+First make sure this is in your `Cargo.toml`:
+```toml
+[dependencies]
+rs-nds = {git = "https://github.com/rrohrer/rs-nds"}
+
+[lib]
+name = "rnds"
+crate-type = ["staticlib"]
 ```
+Next, make a simple rust library that contains this hello-world:
+```rust
 #![no_std]
 #![feature(lang_items)]
 use core::panic::PanicInfo;
