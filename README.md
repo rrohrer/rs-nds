@@ -1,5 +1,7 @@
 # rs-nds
-Bindings generated for libnds as provided by Devkitpro
+Bindings generated for libnds as provided by Devkitpro. They allow you to write rust code that can interact with the system APIs on a Nintendo DS.
+
+This depends on the toolchains made by DEVKITPRO, which needs to be installed and configured before using this library.
 
 # Usage:
 First make sure this is in your `Cargo.toml`:
